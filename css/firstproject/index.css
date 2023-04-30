@@ -1,0 +1,96 @@
+body{
+    margin: 40px 80px 60px 80px;
+   
+}
+
+h3{
+    display: flex;
+   
+    gap: 20px;
+   color: rgb(87, 87, 87);
+   
+}
+a{
+    text-decoration: none;
+    color: rgb(87, 87, 87);
+    display: flex;
+    
+   
+}
+.firstnav{
+    display: flex;
+    color: rgb(64, 64, 64);
+    border-bottom: 3px solid rgb(225, 222, 222);
+    justify-content: space-between;
+}
+.secondnav{
+    display: flex;
+    
+    justify-content: flex-start;
+    
+}
+
+
+select{
+    width:20px ;    
+}
+.second{
+    display: flex;
+    justify-content: space-between;
+    
+}
+i{
+
+    color: black;
+}
+.view{
+    text-decoration: underline;
+}
+.parent{
+    display: flex;
+    justify-content: center;
+}
+button{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 250px;
+    height: 30px;
+    border-radius:10px ;
+    
+}
+.child{
+     
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(220, 219, 219);
+    border-width: 1px;
+    border-radius: 10px;
+    margin:50px;
+    padding: 30px 40px 30px 20px;
+    
+    background-color: rgb(255, 255, 255);
+    
+    border-radius: 10px;
+    justify-content: flex-end;
+}
+
+button:hover{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(190, 190, 184);
+    text-align: center;
+    width: 250px;
+    height: 35px;
+    border-radius:10px ;
+}
+.child:hover{
+     
+    background-color: rgb(239, 239, 239);
+    border: 1px solid rgb(220, 219, 219);
+    border-width: 1px;
+    border-radius: 10px;
+    margin:50px;
+    padding: 30px 40px 30px 20px;
+    justify-content: flex-end;
+}
