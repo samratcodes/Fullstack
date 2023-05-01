@@ -1,0 +1,120 @@
+
+
+
+nav{
+    padding: 0px 170px 0px 500px;
+    display: flex;
+    justify-content:space-between;
+    background-color: rgb(232, 232, 232);
+    font-size: small;
+    text-decoration: none;
+    
+}
+a{
+    text-decoration: none;
+    color: rgb(52, 52, 52);
+}
+.aa{
+    text-decoration: none;
+    color: rgb(239, 144, 0);
+}
+a{
+    text-decoration: none;
+}
+.layer{
+    margin: 0px 120px 0px 140px ;
+    
+}
+.second{
+    display: flex;
+    justify-content: space-between;
+    margin:10px 0px 0px 0px ;
+  
+}
+.daraz{
+    display: flex;
+   align-items:center;
+   width: 400px;
+   height:30px;
+   margin:10px 0px 0px 0px ;
+  
+}
+button{
+    border: none;
+}
+
+input{
+    width: 550px;
+    height:30px;
+    border: solid 1px rgb(230, 230, 230);
+    border-radius: 5px;
+    background-color: rgb(235, 235, 235);
+}
+i{
+    padding: 20px;
+    
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+.third{
+    margin: 20px 0px 0px 0px;
+    background-color: rgb(249, 249, 249);
+}
+.shop{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-;
+}
+.proud{
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  font-size: 18px;
+}
+.proud a{
+    display: flex;
+    justify-content: center;
+    border: 1px ridge rgb(227, 224, 224);
+    width: 170px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+}
+.proud a:hover{
+    display: flex;
+    justify-content: center;
+    border: 2px ridge rgb(161, 160, 160);
+    width: 170px;
+    height: 40px;
+    background-color: rgb(233, 232, 232);
+    border-radius: 25px;
+}
+.flash{
+    text-align: center;
+}
+.parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+.child{
+    border: 1px solid rgb(231, 230, 230);
+    padding: 3px 0px 0px 20px;
+}
+.child:hover{
+    background-color: rgb(232, 232, 224);
+    padding: 3px 0px 0px 20px;
+    border: 1px solid rgb(168, 163, 163);
+}
+.message{
+    border: 1px ridge rgb(225, 225, 206);
+    background-color: rgb(78, 172, 249);
+    position: fixed ;
+    bottom: 5%;
+    right: 30px;
+    border-radius: 10%;
+
+}

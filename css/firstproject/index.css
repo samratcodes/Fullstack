@@ -11,7 +11,7 @@ gap: 20px;
 }
 a{
     text-decoration: none;
-    color: rgb(87, 87, 87);
+    color: rgb(150, 142, 142);
     display: flex;
     justify-content: space-around;
    
@@ -91,4 +91,14 @@ button:hover{
     margin:10px;
     padding: 30px 20px 30px 20px;
     justify-content: flex-end;
+}
+
+a:hover{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+}
+.parent{
+    
 }
