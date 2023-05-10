@@ -69,10 +69,12 @@ const product=[
 
     
     const container =document.getElementById('container')
-    product.forEach((Data)=>{
-        const card=document.createElement('div')
+    const card=document.createElement('div')
         card.className='card'
-        // card.style.display= flex
+        card.style.width='18rem'
+    product.forEach((Data)=>{
+        
+        
         const image =document.createElement('img')
         image.src=Data.images
         const body=document.createElement('div')
@@ -86,6 +88,7 @@ const product=[
         const button=document.createElement('a')
         button.className='btn btn-primary'
         button.innerHTML='View product'
-        container.append(card,image,body,title,description,button)
+        card.append(image,body,title,description,button)
        
     })
+    container.append(card)
