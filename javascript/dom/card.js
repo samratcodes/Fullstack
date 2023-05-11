@@ -9,9 +9,9 @@ const product=[
         "stock":94,"brand":"Apple",
         "category":"smartphones",
         "thumbnail":"https://i.dummyjson.com/data/products/1/thumbnail.jpg",
-        "images":[
+        "images":
             "https://i.dummyjson.com/data/products/1/1.jpg",
-            ]
+            
     },
     {"id":2,
     "title":"iPhone X",
@@ -23,9 +23,9 @@ const product=[
     "brand":"Apple",
     "category":"smartphones",
     "thumbnail":"https://i.dummyjson.com/data/products/2/thumbnail.jpg",
-    "images":[
+    "images":
         "https://i.dummyjson.com/data/products/2/1.jpg"
-        ]
+        
     },
     {"id":3,
     "title":"Samsung Universe 9",
@@ -37,7 +37,7 @@ const product=[
     "brand":"Samsung",
     "category":"smartphones",
     "thumbnail":"https://i.dummyjson.com/data/products/3/thumbnail.jpg",
-    "images":["https://i.dummyjson.com/data/products/3/1.jpg"]
+    "images":"https://i.dummyjson.com/data/products/3/1.jpg"
      },
     
      {"id":4,
@@ -49,8 +49,8 @@ const product=[
      "brand":"OPPO",
      "category":"smartphones",
      "thumbnail":"https://i.dummyjson.com/data/products/4/thumbnail.jpg",
-     "images":[
-     "https://i.dummyjson.com/data/products/4/thumbnail.jpg"]
+     "images":
+     "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
     },
 
     {"id":5,
@@ -63,32 +63,39 @@ const product=[
     "brand":"Huawei",
     "category":"smartphones",
     "thumbnail":"https://i.dummyjson.com/data/products/5/thumbnail.jpg",
-    "images":[
-    "https://i.dummyjson.com/data/products/5/3.jpg"]},
+    "images":
+    "https://i.dummyjson.com/data/products/5/3.jpg"},
     ]
 
     
     const container =document.getElementById('container')
-    const card=document.createElement('div')
+    container.className = "d-flex justify-content-around flex-wrap";
+    let card
+    product.forEach((Data)=>{
+        card=document.createElement('div')
         card.className='card'
         card.style.width='18rem'
-    product.forEach((Data)=>{
-        
         
         const image =document.createElement('img')
-        image.src=Data.images
+        image.src=Data.thumbnail
+        image.className='h-50'
+        card.append(image)
         const body=document.createElement('div')
         body.className='card-body'
+        card.append(body)
         const title=document.createElement('h5')
         title.className='card-title'
         title.innerHTML=Data.title
+        card.append(title)
         const description=document.createElement('p')
         description.className='card-text'
+        card.append(description)
         description.innerHTML=Data.description
         const button=document.createElement('a')
         button.className='btn btn-primary'
         button.innerHTML='View product'
-        card.append(image,body,title,description,button)
-       
+        card.append(button)
+        
+        container.append(card)
     })
-    container.append(card)
+    
