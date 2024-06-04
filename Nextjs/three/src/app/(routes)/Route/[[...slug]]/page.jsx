@@ -4,7 +4,10 @@ const page = ({params}) => {
   return (
     <div>
      
-     <h1 className=' text-3xl '> Route 1 : as you can see the link in the route has : {params.slug?params.slug:'Nothing'}</h1>
+<h1 className=' text-3xl '> Route 1 : as you can see the link in the route has : 
+     {params.slug?params.slug:'Nothing'}
+</h1>
+
      now click on another link to find out next route
       <div>
       <div className="bg-gray-100 p-6 rounded-md shadow-md">
